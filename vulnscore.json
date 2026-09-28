@@ -1,0 +1,78 @@
+{
+  "assets": [
+    "web-01",
+    "api-gateway",
+    "db-primary",
+    "hr-portal",
+    "vpn-edge",
+    "backup-nas"
+  ],
+  "findings": [
+    {
+      "id": "DUM-001",
+      "title": "SQL injection in login form",
+      "asset": "web-01",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H"
+    },
+    {
+      "id": "DUM-002",
+      "title": "Remote code execution in outdated framework",
+      "asset": "api-gateway",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H"
+    },
+    {
+      "id": "DUM-003",
+      "title": "Default admin credentials on database",
+      "asset": "db-primary",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N"
+    },
+    {
+      "id": "DUM-004",
+      "title": "Stored XSS in profile page",
+      "asset": "hr-portal",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:L/I:L/A:N"
+    },
+    {
+      "id": "DUM-005",
+      "title": "VPN pre-auth memory leak",
+      "asset": "vpn-edge",
+      "vec": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N"
+    },
+    {
+      "id": "DUM-006",
+      "title": "Weak TLS cipher suites enabled",
+      "asset": "web-01",
+      "vec": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:L/A:N"
+    },
+    {
+      "id": "DUM-007",
+      "title": "Local privilege escalation via SUID binary",
+      "asset": "backup-nas",
+      "vec": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H"
+    },
+    {
+      "id": "DUM-008",
+      "title": "Verbose error messages leak paths",
+      "asset": "api-gateway",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N"
+    },
+    {
+      "id": "DUM-009",
+      "title": "Unpatched kernel DoS (physical access)",
+      "asset": "backup-nas",
+      "vec": "CVSS:3.1/AV:P/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H"
+    },
+    {
+      "id": "DUM-010",
+      "title": "Missing security headers",
+      "asset": "hr-portal",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N"
+    },
+    {
+      "id": "DUM-011",
+      "title": "Insecure direct object reference",
+      "asset": "hr-portal",
+      "vec": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N"
+    }
+  ]
+}
